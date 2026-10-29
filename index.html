@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Portfolio</title>
+    <title>Attaullah | Web Developer</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Navigation -->
+    <!-- Navbar -->
     <header>
         <nav class="navbar">
-            <h2 class="logo">MyPortfolio</h2>
+
+            <a href="#home" class="logo">MyPortfolio<span>.</span></a>
 
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -23,222 +26,457 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <button id="menu-btn" class="menu-btn">☰</button>
+            <button
+                id="menu-btn"
+                class="menu-btn"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+                ☰
+            </button>
+
         </nav>
     </header>
 
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <p class="welcome">Hello, I'm</p>
 
-            <h1>Attaullah</h1>
+        <div class="hero-container">
 
-            <h2>Web Developer</h2>
+            <!-- Left Side: Introduction -->
+            <div class="hero-content">
 
-            <p>
-                I create clean, modern and 
-            </p>
+                <p class="welcome">HELLO, I'M</p>
 
-            <div class="hero-buttons">
-                <a href="#projects" class="btn">My resume</a>
-                <a href="#contact" class="btn btn-outline">Contact Me</a>
+                <h1>Attaullah<span>.</span></h1>
+
+                <h2>Full Stack Web Developer</h2>
+
+                <p class="hero-description">
+                    I build modern, responsive, and user-friendly
+                    websites and web applications using the latest
+                    web technologies.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn">
+                        Explore Projects →
+                    </a>
+
+                    <a href="#contact" class="btn btn-outline">
+                        Contact Me
+                    </a>
+
+                </div>
+
+                <div class="hero-social">
+                    <span>Creative.</span>
+                    <span>Passionate.</span>
+                    <span>Developer.</span>
+                </div>
+
             </div>
+
+
+            <!-- Right Side: Profile Image -->
+            <div class="hero-image">
+
+                <div class="image-glow"></div>
+
+                <div class="image-frame">
+
+                    <img
+                        src="images/profile.png"
+                        alt="Attaullah - Full Stack Web Developer"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                    >
+
+                    <!-- Shown only if the image cannot be loaded -->
+                    <div class="image-fallback">
+                        <span>YOUR PHOTO</span>
+                        <small>Add your image to images/profile.png</small>
+                    </div>
+
+                </div>
+
+                <div class="floating-card card-top">
+                    <span class="status-dot"></span>
+                    Available for Projects
+                </div>
+
+                <div class="floating-card card-bottom">
+                    <span class="code-icon">&lt;/&gt;</span>
+                    <div>
+                        <strong>Full Stack</strong>
+                        <small>Web Development</small>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
+
+        <a href="#about" class="scroll-down">
+            <span></span>
+            Scroll to explore
+        </a>
+
     </section>
 
 
     <!-- About Section -->
     <section id="about" class="section">
+
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+
+            <div class="section-heading">
+                <span class="section-label">GET TO KNOW ME</span>
+                <h2>About <span>Me</span></h2>
+                <p>A little introduction about who I am and what I do.</p>
+            </div>
 
             <div class="about-content">
+
                 <div class="about-image">
-                    <div class="profile-placeholder">
-                        Your Photo
+                    <div class="about-image-box">
+                        <img
+                            src="images/profile.png"
+                            alt="Attaullah profile photo"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                        >
+                        <div class="about-image-fallback">
+                            Your Photo
+                        </div>
                     </div>
                 </div>
 
                 <div class="about-text">
+
                     <h3>I'm a passionate Web Developer</h3>
 
                     <p>
-                        I'm interested in building websites and web
-                        applications that are simple, beautiful and
-                        easy to use.
+                        I'm a full stack developer who enjoys creating
+                        modern websites and web applications that solve
+                        real-world problems.
                     </p>
 
                     <p>
-                        I enjoy learning new technologies and turning
-                        ideas into real-world projects.
+                        I work with technologies such as HTML, CSS,
+                        JavaScript, React, Next.js, Node.js, MongoDB,
+                        Angular, and .NET Core.
                     </p>
 
-                    <a href="#contact" class="btn">Let's Talk</a>
+                    <p>
+                        My goal is to create clean designs, write
+                        maintainable code, and continuously improve
+                        my development skills.
+                    </p>
+
+                    <a href="#contact" class="btn">
+                        Let's Work Together →
+                    </a>
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
 
 
     <!-- Skills Section -->
     <section id="skills" class="section skills-section">
+
         <div class="container">
-            <h2 class="section-title">My Skills</h2>
+
+            <div class="section-heading">
+                <span class="section-label">WHAT I WORK WITH</span>
+                <h2>My <span>Skills</span></h2>
+                <p>Technologies I use to build web applications.</p>
+            </div>
 
             <div class="skills-grid">
 
                 <div class="skill-card">
-                    <h3>HTML</h3>
-                    <p>Semantic and accessible web structure.</p>
+                    <div class="skill-number">01</div>
+                    <h3>HTML5</h3>
+                    <p>Semantic structure and accessible web pages.</p>
                 </div>
 
                 <div class="skill-card">
-                    <h3>CSS</h3>
-                    <p>Responsive layouts and modern designs.</p>
+                    <div class="skill-number">02</div>
+                    <h3>CSS3</h3>
+                    <p>Modern styling, animations, and responsive layouts.</p>
                 </div>
 
                 <div class="skill-card">
+                    <div class="skill-number">03</div>
                     <h3>JavaScript</h3>
-                    <p>Interactive and dynamic web experiences.</p>
+                    <p>Interactive interfaces and dynamic functionality.</p>
                 </div>
 
                 <div class="skill-card">
+                    <div class="skill-number">04</div>
+                    <h3>React.js</h3>
+                    <p>Reusable components and interactive user interfaces.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-number">05</div>
+                    <h3>Next.js</h3>
+                    <p>Modern full stack web application development.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-number">06</div>
+                    <h3>Node.js</h3>
+                    <p>Backend logic and REST API development.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-number">07</div>
+                    <h3>MongoDB</h3>
+                    <p>Database design and application data management.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-number">08</div>
                     <h3>Responsive Design</h3>
-                    <p>Websites that work on all screen sizes.</p>
+                    <p>Websites that adapt to different screen sizes.</p>
                 </div>
 
             </div>
+
         </div>
+
     </section>
 
 
     <!-- Projects Section -->
     <section id="projects" class="section">
+
         <div class="container">
 
-            <h2 class="section-title">My Projects</h2>
+            <div class="section-heading">
+                <span class="section-label">MY RECENT WORK</span>
+                <h2>Featured <span>Projects</span></h2>
+                <p>A selection of projects demonstrating my development skills.</p>
+            </div>
 
             <div class="projects-grid">
 
-                <div class="project-card">
-                    <div class="project-image">
-                        Project 1
+                <!-- Project 1 -->
+                <article class="project-card">
+
+                    <div class="project-image project-one">
+                        <span class="project-tag">01 / WEB DESIGN</span>
+                        <div class="project-preview">Portfolio</div>
                     </div>
 
                     <div class="project-content">
+
                         <h3>Portfolio Website</h3>
 
                         <p>
-                            A responsive personal portfolio website
-                            built with HTML, CSS and JavaScript.
+                            A professional personal portfolio website
+                            featuring responsive layouts and modern styling.
                         </p>
 
-                        <a href="#" class="project-link">
-                            View Project →
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="#contact" class="project-link">
+                            View Project <span>↗</span>
                         </a>
+
                     </div>
-                </div>
+
+                </article>
 
 
-                <div class="project-card">
-                    <div class="project-image">
-                        Project 2
+                <!-- Project 2 -->
+                <article class="project-card">
+
+                    <div class="project-image project-two">
+                        <span class="project-tag">02 / BUSINESS</span>
+                        <div class="project-preview">Business</div>
                     </div>
 
                     <div class="project-content">
-                        <h3>Landing Page</h3>
+
+                        <h3>Business Landing Page</h3>
 
                         <p>
-                            A modern landing page designed for a
-                            fictional business.
+                            A modern business landing page designed
+                            to present services and engage visitors.
                         </p>
 
-                        <a href="#" class="project-link">
-                            View Project →
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Responsive</span>
+                        </div>
+
+                        <a href="#contact" class="project-link">
+                            View Project <span>↗</span>
                         </a>
+
                     </div>
-                </div>
+
+                </article>
 
 
-                <div class="project-card">
-                    <div class="project-image">
-                        Project 3
+                <!-- Project 3 -->
+                <article class="project-card">
+
+                    <div class="project-image project-three">
+                        <span class="project-tag">03 / APPLICATION</span>
+                        <div class="project-preview">Web App</div>
                     </div>
 
                     <div class="project-content">
-                        <h3>JavaScript App</h3>
+
+                        <h3>JavaScript Application</h3>
 
                         <p>
-                            An interactive JavaScript application
-                            with a clean user interface.
+                            An interactive web application focused on
+                            usability, dynamic content, and functionality.
                         </p>
 
-                        <a href="#" class="project-link">
-                            View Project →
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>DOM</span>
+                            <span>CSS</span>
+                        </div>
+
+                        <a href="#contact" class="project-link">
+                            View Project <span>↗</span>
                         </a>
+
                     </div>
-                </div>
+
+                </article>
 
             </div>
+
         </div>
+
     </section>
 
 
     <!-- Contact Section -->
     <section id="contact" class="section contact-section">
+
         <div class="container">
 
-            <h2 class="section-title">Contact Me</h2>
+            <div class="section-heading">
+                <span class="section-label">LET'S CONNECT</span>
+                <h2>Contact <span>Me</span></h2>
+                <p>Have a project in mind? Let's discuss your idea.</p>
+            </div>
 
-            <p class="contact-intro">
-                Have a project or idea? Feel free to get in touch.
-            </p>
+            <div class="contact-wrapper">
 
-            <form id="contact-form" class="contact-form">
+                <div class="contact-info">
 
-                <input
-                    type="text"
-                    id="name"
-                    placeholder="Your Name"
-                    required
-                >
+                    <h3>Let's build something great.</h3>
 
-                <input
-                    type="email"
-                    id="email"
-                    placeholder="Your Email"
-                    required
-                >
+                    <p>
+                        Have an idea, a project, or a question?
+                        Send me a message using the contact form.
+                    </p>
 
-                <textarea
-                    id="message"
-                    rows="6"
-                    placeholder="Your Message"
-                    required
-                ></textarea>
+                    <div class="contact-detail">
+                        <span class="contact-icon">@</span>
+                        <div>
+                            <strong>Email</strong>
+                            <p>Add your email address here.</p>
+                        </div>
+                    </div>
 
-                <button type="submit" class="btn">
-                    Send Message
-                </button>
+                    <div class="contact-detail">
+                        <span class="contact-icon">&lt;/&gt;</span>
+                        <div>
+                            <strong>Specialization</strong>
+                            <p>Full Stack Web Development</p>
+                        </div>
+                    </div>
 
-                <p id="form-message"></p>
+                </div>
 
-            </form>
+
+                <form id="contact-form" class="contact-form">
+
+                    <label for="name">Your Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                    <label for="email">Your Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <label for="message">Your Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Tell me about your project..."
+                        required
+                    ></textarea>
+
+                    <button type="submit" class="btn submit-btn">
+                        Send Message →
+                    </button>
+
+                    <p id="form-message" role="status" aria-live="polite"></p>
+
+                </form>
+
+            </div>
+
         </div>
+
     </section>
 
 
     <!-- Footer -->
-    <footer>
-        <p>
-            © <span id="year"></span> Your Name. All rights reserved.
-        </p>
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <a href="#home" class="logo">
+                MyPortfolio<span>.</span>
+            </a>
+
+            <p>
+                © <span id="year"></span> Attaullah.
+                All rights reserved.
+            </p>
+
+            <a href="#home" class="back-to-top">Back to top ↑</a>
+
+        </div>
+
     </footer>
 
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
